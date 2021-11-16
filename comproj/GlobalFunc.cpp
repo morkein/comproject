@@ -58,6 +58,8 @@ int checkDay(int sday){//проверка диапазона ввода дн€
 			return 0;
 		}
 	}
+	else 
+		return 0;
 	return 1;
 }
 
@@ -68,6 +70,8 @@ int checkMonth(int smonth){//проверка диапазона ввода мес€ца
 			return 0;
 		}
 	}
+	else 
+		return 0;
 	return 1;
 }
 
@@ -76,6 +80,8 @@ int checkYear(int syear){//проверка диапазона ввода года
 		cout << "ќшибка ввода года" << endl;
 		return 0;
 	}
+	else 
+		return 0;
 	return 1;
 }
 
