@@ -22,7 +22,11 @@ void Menu::DeleteRecord(){	//Удаление записи из списка
 		cout << "\n\nВведите id записи для удаления:";
 		enterInt(&sid);	//вводим ид
 	} while (!checkNegative(sid));	//пока отрицательное
-	ptrRecordList->Delete(sid);	//вызываем метод удаления класса списка записей
+	if (ptrRecordList->FindId(sid)){
+		ptrRecordList->Delete(sid);	//вызываем метод удаления класса списка записей
+	}
+	else
+		cout << "Запись не найдена." << endl;
 }
 
 void Menu::Update(){	//обновление меню
