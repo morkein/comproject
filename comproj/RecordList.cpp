@@ -31,6 +31,23 @@ void RecordList::InsertRecord(Record* ptrR){
 	ptrRecord.push_back(ptrR); //вставляем в конец новую запись
 }
 
+void RecordList::Display(){
+	if (ptrRecord.empty())	//если список пустой
+		cout << "\n\nСписок записей пуст, добавьте записи." << endl;	//пишем, что пустой
+	else //иначе
+	{
+		printHeader();	//выводим заголовок таблицы
+		printFooter();
+		iter = ptrRecord.begin();	//итератор в начало списка
+		while (iter != ptrRecord.end()){	//если итератор не в конце
+			(*iter)->Print();	//то выводим элемент по указателю при помощи метода
+			printFooter();
+			*iter++;	//к следующему элементу
+		}
+	}
+	return;
+}
+
 void RecordList::Delete(int sid){	//удаляем запись с соотв. id
 	if (*iter = FindId(sid)){	//если метод нашел запись с таким id, то
 		delete *iter;//очищаем выделенную память
