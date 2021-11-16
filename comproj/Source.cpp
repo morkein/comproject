@@ -1,10 +1,13 @@
 #include <iostream>
-#include "Record.h"
+#include <conio.h>
+#include "Menu.h"
 
 using namespace std;
 int main(){
-	Record rec(1, 2, 3, 4, 12, 30, "Sta", "Liza", "Ale", 89000000000, "Liza", "nogti", 500);
-	rec.Print();
-	system("pause");
+	Menu *menu = new Menu();	//выделяем память под объект класса меню
+	setlocale(LC_ALL, "Russian"); // задаём русский текст
+	system("chcp 1251"); // настраиваем кодировку консоли 
+	menu->Update();	//вызываем метод update
+	delete menu; //по выходу из метода очищаем память из под объекта
 	return 1;
 }
