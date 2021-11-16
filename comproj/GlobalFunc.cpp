@@ -80,8 +80,6 @@ int checkYear(int syear){//проверка диапазона ввода года
 		cout << "Ошибка ввода года" << endl;
 		return 0;
 	}
-	else 
-		return 0;
 	return 1;
 }
 
@@ -92,6 +90,8 @@ int checkHour(int shour){//проверка диапазона ввода часов
 			return 0;
 		}
 	}
+	else
+		return 0;
 	return 1;
 }
 
@@ -102,6 +102,8 @@ int checkMin(int smin){//проверка диапазона ввода минут
 			return 0;
 		}
 	}
+	else
+		return 0;
 	return 1;
 }
 
