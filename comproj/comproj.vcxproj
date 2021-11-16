@@ -78,11 +78,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GlobalFunc.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Record.cpp" />
+    <ClCompile Include="RecordList.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GlobalFunc.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="Record.h" />
+    <ClInclude Include="RecordList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
