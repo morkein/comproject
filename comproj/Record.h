@@ -50,5 +50,6 @@ public:
 	void SetMaster(string smaster);
 	void SetType(string stype);
 	void SetPrice(int sprice);
+	void Print();//выводит пол€ экземпл€ра класса 
 };
 #endif
