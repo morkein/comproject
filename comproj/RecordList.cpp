@@ -2,6 +2,7 @@
 #include <string>
 #include <iomanip>
 #include "RecordList.h"
+#include "GlobalFunc.h"
 
 using namespace std;
 
